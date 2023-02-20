@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Suite landing page</title>
+</head>
+<body>
+
+  <!------------------- HEADER --------------------->
+
+  <header class="header">
+    <img class="main-logo" src="assets/logo.svg" alt="main-logo">
+    <button class="header__button" value="Request Beta Access">Request Beta Access</button>
+  </header>
+  <main class="main">
+
+    <!------------------- HERO --------------------->
+
+    <section class="main__hero">
+      <div class="hero__description-div">
+        <img class="hero__line-img" src="assets/pattern-curved-line-1.svg">
+        <h1 class="description__title">A <b>super solution</b> for your <b>business.</b></h1>
+        <p class="description">Our marketing and sales automations help you scale your outreach to 
+          get more leads for your company.
+        </p>
+        <button class="hero__button" value="Request Beta Access">Request Beta Access</button>
+      </div>
+      <picture class="hero__image">
+        <source media="(max-width: 480px)" type="image/webp"
+                srcset="assets/image-hero-landscape.webp 343w,
+                        assets/image-hero-landscape@2x.webp 686w">
+
+        <source media="(min-width: 481px)" type="image/webp"
+                srcset="assets/image-hero-portrait.webp 350w,
+                        assets/image-hero-portrait@2x.webp 700w">
+
+        <source media="(max-width: 480px)" type="image/png"
+                srcset="assets/image-hero-landscape.png 343w,
+                        assets/image-hero-landscape@2x.png 686w">
+
+        <source media="(min-width: 481px)" type="image/png"
+                srcset="assets/image-hero-portrait.png 350w,
+                        assets/image-hero-portrait@2x.png 700w">
+        <img src="assets/image-hero-landscape.png" alt="picture of smartphone">
+      </picture>
+      <div class="hero__stats-div">
+        <p class="hero__stat"><span>2K+</span>Companies</p>
+        <p class="hero__stat"><span>8</span>Languages</p>
+        <p class="hero__stat"><span>1.2M</span>Leads</p>
+      </div>
+    </section>
+
+    <!------------------- QUOTE SECTION --------------------->
+
+    <section class="main__quote-section">
+      <picture class="quote-section__img">
+        <source media="(max-width: 480px)" type="image/webp"
+                srcset="assets/image-jeremy-small.webp 243w,   
+                        assets/image-jeremy-small@2x.webp 486w">
+
+        <source media="(min-width: 481px)" type="image/webp"
+                srcset="assets/image-jeremy-large.webp 361w,
+                        assets/image-jeremy-large@2x.webp 722w">
+
+        <source media="(max-width: 480px)" type="image/png"
+                srcset="assets/image-jeremy-small.png 243w,  
+                        assets/image-jeremy-small@2x.png 486w">
+
+        <source media="(min-width: 481px)" type="image/png"
+                srcset="assets/image-jeremy-large.png 361w,
+                        assets/image-jeremy-large@2x.png 722w">
+          <img src="assets/image-jeremy-small.png" alt="picture with jeremy">
+      </picture>
+      <img class="quote-section__curved-line" src="assets/pattern-curved-line-2.svg">
+      <h2 class="quote-section__title">It just <b>works.</b></h2>
+      <blockquote class="quote-section__quote">
+          “I really like how it is an all-in-one solution that handle many of 
+          the tasks that you would normally need separate tools to do the same 
+          job. This thing is a miracle worker.”
+      </blockquote>
+      <div>
+        <p class="quote-section__quote-author">Jeremy Robinson</p>
+        <p class="quote-section__quote-author-info">CMO, Fylo</p>
+      </div>
+    </section>
+  </main>
+
+  <!------------------- FOOTER --------------------->
+
+  <footer class="footer">
+    <img class="main-logo" src="assets/logo.svg" alt="main-logo">
+    <p class="footer__copyright">Copyright - Suite</p>
+    <div class="footer__soc-media-icons">
+      <a href="#" class="soc-icon"><img src="assets/icon-facebook.svg" alt="facebook-icon"></a>
+      <a href="#" class="soc-icon"><img src="assets/icon-twitter.svg" alt="twitter-icon"></a>
+      <a href="#" class="soc-icon"><img src="assets/icon-instagram.svg" alt="instagram-icon"></a>
+    </div>
+  </footer>
+</body>
+</html>
